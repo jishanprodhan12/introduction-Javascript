@@ -18,3 +18,5 @@ if(isPresent){
 }else {
     console.log('element is not present in the array');
 }
+
+// index.of() if the value is not present then it will return -1 .
