@@ -20,3 +20,4 @@ if(isPresent){
 }
 
 // index.of() if the value is not present then it will return -1 .
+// console.log(books.indexOf('javascript'));
