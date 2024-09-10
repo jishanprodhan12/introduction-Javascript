@@ -24,7 +24,7 @@ Challenge 📢 : যদি কোনো ইনপুট পজিটিভ স�
 
 function calculateTax(income, expenses) {
   if(income < 0 || expenses < 0 || income < expenses ){
-    return "Invalid Input"
+    return "Invalid Input" ;
   }
   return ( income - expenses ) * .20 ;
 }
