@@ -27,5 +27,7 @@ function sendNotification(email) {
     const mgs = userName.concat("sent you an email from").concat(domainName);
     return mgs.join(' ') ;
 }
+// testing and function calling here 
+
 const test = sendNotification('sadia8icloud.com');
 console.log(test);

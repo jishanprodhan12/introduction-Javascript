@@ -26,6 +26,9 @@ function checkDigitsInName(name) {
     }
     return false; 
 }
+
+// testing and function calling here 
+
 const test = checkDigitsInName('Raj123');
 console.log(test);
 

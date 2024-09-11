@@ -23,10 +23,12 @@ Challenge 📢 : যদি কোনো ইনপুট পজিটিভ স�
  */
 
 function calculateTax(income, expenses) {
-  if(income < 0 || expenses < 0 || income < expenses ){
+  if(income < 0 || expenses < 0 || income < expenses || (typeof income !=='number' || typeof expenses !== 'number') ){
     return "Invalid Input" ;
   }
   return ( income - expenses ) * .20 ;
 }
-const tax = calculateTax(-5000, 2000);
+// testing and function calling here 
+
+const tax = calculateTax(40,5);
 console.log(tax);

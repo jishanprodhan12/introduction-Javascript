@@ -18,3 +18,8 @@ let student = {
  };
  const keys =Object.keys(student);
  console.log(keys);
+    let count = 0 ;
+ for(const key of keys){
+        count++;
+ }
+ console.log(count);
