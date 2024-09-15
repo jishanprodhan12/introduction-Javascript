@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event js</title>
+
+</head>
+<body>
+    <h1>ajka amra event niya code korbo</h1>
+    <!-- option 1  -->
+     <button onclick="console.log('hello')">print on console </button>
+     <!-- option 2  -->
+    <button onclick="document.body.style.backgroundColor = 'green' ">Make green</button>
+    <!-- option 3  -->
+    <button onclick="makeRed()">Make red</button>
+    <br>
+    <br>
+    <!-- option 4  -->
+    <button id="btn-blue">Make blue</button>
+    <!-- option 5 -->
+     <button id="btn-pink">Make pink</button>
+
+    <script>
+       const pinkBtn = document.getElementById('btn-pink');
+       pinkBtn.onclick = pink ;
+       function pink(){
+        document.body.style.backgroundColor = 'pink';
+       }
+       
+    </script>
+    <script src="./js/event.js"></script>
+</body>
+</html>
