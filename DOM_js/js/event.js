@@ -10,3 +10,10 @@ function makeRed (){
  document.getElementById('btn-blue').addEventListener('click',function(){
     document.body.style.backgroundColor = 'blue';
    })
+
+   // option 5 
+   const pinkBtn = document.getElementById('btn-pink');
+       pinkBtn.onclick = pink ;
+       function pink(){
+        document.body.style.backgroundColor = 'pink';
+       }

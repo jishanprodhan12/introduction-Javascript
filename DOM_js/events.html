@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>ajka amra event niya code korbo</h1>
+   
     <!-- option 1  -->
      <button onclick="console.log('hello')">print on console </button>
      <!-- option 2  -->
@@ -20,13 +21,26 @@
     <button id="btn-blue">Make blue</button>
     <!-- option 5 -->
      <button id="btn-pink">Make pink</button>
-
+     <br> <br>
+     <section id="dynamic-section">
+        <input type="text" name="" id="text-fild">
+        <button id="btn-update">update</button>
+     </section>
+   
     <script>
-       const pinkBtn = document.getElementById('btn-pink');
-       pinkBtn.onclick = pink ;
-       function pink(){
-        document.body.style.backgroundColor = 'pink';
-       }
+        document.getElementById('btn-update').addEventListener('click',function(event){
+           const dynamicText = document.getElementById('text-fild').value;
+        //    target parent 
+           const dynamicSection = document.getElementById('dynamic-section');
+        //    create dynamic elemnet 
+        const p =document.createElement('p');
+        // set innerText 
+        p.innerText = dynamicText ;
+        // add the created element 
+        dynamicSection.appendChild(p);
+        document.getElementById('text-fild').value = '';
+
+        });
        
     </script>
     <script src="./js/event.js"></script>
