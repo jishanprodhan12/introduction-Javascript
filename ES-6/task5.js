@@ -7,14 +7,14 @@
  */
 const evenNames = [];
 const friends = (names) => {
-    for(const name of names){
+    for (const name of names) {
         if (name.length % 2 === 0) {
             evenNames.push(name);
         }
     }
     return evenNames;
 }
-const arrayNameList = ['jishan', 'fima', 'kanta','rabbi','Setu'] ;
+const arrayNameList = ['jishan', 'fima', 'kanta', 'rabbi', 'Setu'];
 friends(arrayNameList);
-console.log("given Array is ",arrayNameList);
+console.log("given Array is ", arrayNameList);
 console.log(evenNames);
